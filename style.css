@@ -9,7 +9,7 @@ header {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px 20px; /* Réduction de la hauteur de l'entête */
+  padding: 10px 20px; /* Hauteur de l'en-tête réduite */
 }
 
 header h1 {
@@ -33,21 +33,22 @@ nav ul li a {
 }
 
 main {
-  padding: 10px 20px; /* Réduction des espacements de la section principale */
+  padding: 20px; /* Ajouter un peu d'espace interne */
+  margin: 0 50px; /* Ajouter des marges à gauche et à droite de la page */
 }
 
 section {
   background-color: white;
-  padding: 15px; /* Réduction du padding dans chaque section */
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Réduction de l'espace entre les sections */
+  margin-bottom: 20px;
 }
 
 h2 {
   color: #333;
   font-size: 22px;
-  margin-bottom: 10px; /* Réduction de l'espacement sous le titre */
+  margin-bottom: 10px;
 }
 
 .donFields {
@@ -62,15 +63,15 @@ footer {
 }
 
 form {
-  max-width: 500px; /* Réduction de la largeur du formulaire */
-  margin: 0 auto;
+  max-width: 500px;
+  margin: 20px auto; /* Centrer le formulaire et ajouter un espace au-dessus */
 }
 
 form label, form input, form select {
   display: block;
-  margin-bottom: 8px; /* Réduction de l'espace sous les labels et inputs */
+  margin-bottom: 8px;
   width: 100%;
-  padding: 8px; /* Réduction du padding dans les champs */
+  padding: 8px;
 }
 
 form button {
@@ -80,7 +81,7 @@ form button {
   padding: 10px 20px;
   cursor: pointer;
   width: 100%; /* Le bouton prend toute la largeur */
-  margin-top: 10px; /* Espacement au-dessus du bouton */
+  margin-top: 10px;
 }
 
 form button:hover {
