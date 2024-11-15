@@ -1,14 +1,19 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+function showFields() {
+  // Masquer tous les champs dynamiques au départ
+  let donFields = document.querySelectorAll('.donFields');
+  donFields.forEach(field => field.style.display = 'none');
 
-  if (name && email && message) {
-    alert('Votre message a été envoyé avec succès !');
-    // Vous pouvez également envoyer le formulaire via un service comme Formspree ou un backend ici.
-  } else {
-    alert('Veuillez remplir tous les champs.');
+  // Récupérer la valeur du don sélectionné
+  let donType = document.getElementById('donType').value;
+
+  // Afficher les champs correspondants en fonction du choix
+  if (donType === 'argent') {
+    document.getElementById('argentFields').style.display = 'block';
+  } else if (donType === 'nourriture') {
+    document.getElementById('nourritureFields').style.display = 'block';
+  } else if (donType === 'vetements') {
+    document.getElementById('vetementsFields').style.display = 'block';
+  } else if (donType === 'medicaments') {
+    document.getElementById('medicamentsFields').style.display = 'block';
   }
-});
+}
