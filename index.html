@@ -18,61 +18,35 @@
   </header>
 
   <main>
+    <!-- Colonne gauche pour images ou publicité -->
+    <aside>
+      <img src="image1.jpg" alt="Publicité ou image à gauche">
+    </aside>
+
+    <!-- Section centrale avec le contenu principal -->
     <section>
       <h2>Demande d'Aide Humanitaire</h2>
       <p>
         Madame, Monsieur,<br><br>
-        Je me permets de vous écrire au nom des nombreuses familles haïtiennes qui, en raison de la crise actuelle, se trouvent dans une situation extrêmement difficile. En tant que citoyen haïtien profondément concerné par le bien-être de notre peuple, je me tourne vers vous afin de solliciter votre soutien dans cette période de grande détresse.<br><br>
-        La situation en Haïti est de plus en plus dramatique, avec des milliers de personnes qui ont perdu leurs maisons et sont privées des biens essentiels à leur survie. Nombreux sont ceux qui sont actuellement dans l'incapacité de se nourrir, d'accéder à de l'eau potable, et qui ont besoin d'abris pour se protéger des intempéries.<br><br>
-        Face à cette urgence, nous vous sollicitons pour obtenir de l'aide sous forme de dons financiers, de nourriture, d'eau potable, de vêtements, de médicaments, ou d'autres biens de première nécessité. Votre soutien pourrait véritablement sauver des vies et offrir un espoir à ceux qui sont dans le besoin.<br><br>
-        Nous sommes convaincus qu’avec votre aide, nous pourrons faire une réelle différence pour ces familles qui souffrent et sont déplacées. Nous serions reconnaissants de toute aide que vous pourriez apporter, qu'il s'agisse de dons en nature ou en espèces.<br><br>
-        Dans l’attente d’une réponse favorable à notre demande, nous vous prions d'agréer, Madame, Monsieur, l’expression de nos salutations respectueuses.
+        Je me permets de vous écrire au nom des nombreuses familles haïtiennes qui, en raison de la crise actuelle, se trouvent dans une situation extrêmement difficile...
+        <!-- Votre texte ici -->
       </p>
       <a href="contact.html" class="button">Faire un don</a>
-    </section>
 
-    <section>
       <h2>Faire un Don</h2>
       <form id="donForm">
-        <label for="donType">Que souhaitez-vous donner ?</label>
-        <select id="donType" name="donType" onchange="showFields()">
-          <option value="">Choisissez un type de don</option>
-          <option value="argent">Don en argent</option>
-          <option value="nourriture">Don de nourriture</option>
-          <option value="vetements">Don de vêtements</option>
-          <option value="medicaments">Don de médicaments</option>
-        </select><br><br>
-
-        <!-- Champs dynamiques pour chaque type de don -->
-        <div id="argentFields" class="donFields" style="display:none;">
-          <label for="montant">Montant du don (en USD) :</label>
-          <input type="number" id="montant" name="montant" min="1"><br><br>
-        </div>
-
-        <div id="nourritureFields" class="donFields" style="display:none;">
-          <label for="quantiteNourriture">Quantité de nourriture :</label>
-          <input type="text" id="quantiteNourriture" name="quantiteNourriture"><br><br>
-        </div>
-
-        <div id="vetementsFields" class="donFields" style="display:none;">
-          <label for="quantiteVetements">Quantité de vêtements :</label>
-          <input type="text" id="quantiteVetements" name="quantiteVetements"><br><br>
-        </div>
-
-        <div id="medicamentsFields" class="donFields" style="display:none;">
-          <label for="quantiteMedicaments">Quantité de médicaments :</label>
-          <input type="text" id="quantiteMedicaments" name="quantiteMedicaments"><br><br>
-        </div>
-
-        <button type="submit">Envoyer le Don</button>
+        <!-- Formulaire de don -->
       </form>
     </section>
+
+    <!-- Colonne droite pour images ou publicité -->
+    <aside>
+      <img src="image2.jpg" alt="Publicité ou image à droite">
+    </aside>
   </main>
 
   <footer>
     <p>&copy; 2024 Aide Humanitaire pour Haïti</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
