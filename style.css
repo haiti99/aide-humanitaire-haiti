@@ -34,7 +34,7 @@ nav ul li a {
 
 main {
   padding: 50px; /* Ajouter un peu d'espace interne */
-  margin: 0 50px; /* Ajouter des marges à gauche et à droite de la page */
+  margin: 5 50px; /* Ajouter des marges à gauche et à droite de la page */
 }
 
 section {
