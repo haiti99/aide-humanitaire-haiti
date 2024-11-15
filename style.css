@@ -9,7 +9,7 @@ header {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px 20px; /* Hauteur de l'en-tête réduite */
+  padding: 10px 20px; /* Réduction de la hauteur de l'en-tête */
 }
 
 header h1 {
@@ -33,16 +33,19 @@ nav ul li a {
 }
 
 main {
-  padding: 100px; /* Ajouter un peu d'espace interne */
-  margin: 0 50px; /* Ajouter des marges à gauche et à droite de la page */
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Créer 3 colonnes : 1 pour les espaces à gauche et à droite, 3 pour le contenu principal */
+  gap: 20px; /* Espacement entre les colonnes */
+  padding: 20px;
+  margin: 0 50px; /* Espacement de gauche et de droite pour donner de l'espace pour la publicité */
 }
 
-section {
+main section {
+  grid-column: 2; /* Le contenu principal occupe la colonne centrale */
   background-color: white;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
 
 h2 {
@@ -64,7 +67,7 @@ footer {
 
 form {
   max-width: 500px;
-  margin: 20px auto; /* Centrer le formulaire et ajouter un espace au-dessus */
+  margin: 20px auto;
 }
 
 form label, form input, form select {
@@ -80,10 +83,23 @@ form button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  width: 100%; /* Le bouton prend toute la largeur */
+  width: 100%;
   margin-top: 10px;
 }
 
 form button:hover {
   background-color: #0056b3;
+}
+
+/* Styles pour les colonnes de gauche et de droite */
+aside {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside img {
+  width: 100%; /* Faire en sorte que les images remplissent leur conteneur */
+  border-radius: 8px;
 }
